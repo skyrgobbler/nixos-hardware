@@ -15,7 +15,7 @@
         name = "a06-power";
         patch = (pkgs.fetchpatch {
           url = "https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-clockworkpi-a06/-/raw/master/0002-mfd-axp20x-add-clockworkpi-a06-power-support.patch";
-          sha256 = lib.fakeSha256;
+          sha256 = "OAPUDx7igMEqx6PFy0ptiSCe+LDL1ev/ud40tZPsBP8=";
         });
         extraStructuredConfig = {
           MFD_AXP20X = lib.kernel.yes;
