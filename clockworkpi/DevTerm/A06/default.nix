@@ -16,7 +16,8 @@
         name = "a06-power";
         patch = (pkgs.fetchpatch {
           url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-002-power.patch";
-          sha256 = lib.fakeSha256;
+          sha256 = "u2u9l4bU/iryoZ9p6HT8cvHtFNpIZG8dNDSFAGo8u+s=";
+          #sha256 = lib.fakeSha256;
         });
         extraStructuredConfig = {
           MFD_AXP20X = lib.kernel.yes;
