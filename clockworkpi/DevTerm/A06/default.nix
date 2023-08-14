@@ -39,7 +39,8 @@
         name = "a06-panel";
         patch = (pkgs.fetchpatch {
           url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-004-panel.patch";
-          sha256 = lib.fakeSha256;
+          sha256 = "suZR+II27twqFsdscSo/uF2nhAIXPaGTaYmUdMYD7wc=";
+          #sha256 = lib.fakeSha256;
         });
         extraStructuredConfig = {
           DRM_PANEL_CWD686 = lib.kernel.module;
