@@ -29,7 +29,8 @@
         name = "a06-audio";
         patch = (pkgs.fetchpatch {
           url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-003-audio.patch";
-          sha256 = lib.fakeSha256;
+          sha256 = "gAD85NUb1qx7JnYGogck5ozFJE6bPm6Cbgm7kvwbbQQ=";
+          #sha256 = lib.fakeSha256;
         });
         extraStructuredConfig = {
           SND_SOC_ES8323 = lib.kernel.module;
