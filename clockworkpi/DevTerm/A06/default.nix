@@ -6,17 +6,16 @@
     kernelPatches = [ 
       {
         name = "a06-dts";
-        patch = ./patches/kernel-001-a06-dts.patch;
-      }
-      {
-        name = "a06-makefile";
-        patch = ./patches/kernel-001-a06-Makefile.patch;
+        patch = (pkgs.fetchpatch {
+          url = "https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-clockworkpi-a06/-/raw/master/0001-arm64-dts-clockworkpi-a06-dts.patch";
+          sha256 = lib.fakeSha256;
+        })
       }
       {
         name = "a06-power";
         patch = (pkgs.fetchpatch {
-          url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-002-power.patch";
-          sha256 = "u2u9l4bU/iryoZ9p6HT8cvHtFNpIZG8dNDSFAGo8u+s=";
+          url = "https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-clockworkpi-a06/-/raw/master/0002-mfd-axp20x-add-clockworkpi-a06-power-support.patch";
+          sha256 = lib.fakeSha256;
         });
         extraStructuredConfig = {
           MFD_AXP20X = lib.kernel.yes;
@@ -25,20 +24,10 @@
         };
       }
       {
-        name = "a06-audio";
-        patch = (pkgs.fetchpatch {
-          url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-003-audio.patch";
-          sha256 = "gAD85NUb1qx7JnYGogck5ozFJE6bPm6Cbgm7kvwbbQQ=";
-        });
-        extraStructuredConfig = {
-          SND_SOC_ES8323 = lib.kernel.module;
-        };
-      }
-      {
         name = "a06-panel";
         patch = (pkgs.fetchpatch {
-          url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-004-panel.patch";
-          sha256 = "suZR+II27twqFsdscSo/uF2nhAIXPaGTaYmUdMYD7wc=";
+          url = "https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-clockworkpi-a06/-/raw/master/0004-gpu-drm-panel-add-cwd686-driver.patch";
+          sha256 = lib.fakeSha256;
         });
         extraStructuredConfig = {
           DRM_PANEL_CWD686 = lib.kernel.module;
@@ -47,18 +36,18 @@
       {
         name = "a06-backlight";
         patch = (pkgs.fetchpatch {
-          url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-005-backlight.patch";
-          sha256 = "Fku53Vly8KoXgcEhp/8Norw0sQKT4i4kUeSU2K08bmA=";
+          url = "https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-clockworkpi-a06/-/raw/master/0005-video-backlight-add-ocp8178-driver.patch";
+          sha256 = lib.fakeSha256;
         });
         extraStructuredConfig = {
           BACKLIGHT_OCP8178 = lib.kernel.module;
         };
       }
       {
-        name = "a06-panel_2";
+        name = "a06-power-charger";
         patch = (pkgs.fetchpatch {
-          url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-006-panel.patch";
-          sha256 = "yeIVYuYERygsGUWkK2M2ZGnrJpIB+1gzsdYZS1EIKsc=";
+          url = "https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-clockworkpi-a06/-/raw/master/0004-power-supply-Add-Support-for-RK817-Charger.patch";
+          sha256 = lib.fakeSha256;
         });
       }
     ];
