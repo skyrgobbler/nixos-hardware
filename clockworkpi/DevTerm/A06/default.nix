@@ -4,18 +4,11 @@
   boot = {
     kernelPackages = lib.mkDefault pkgs.linuxPackages_latest;
     kernelPatches = [ 
-      #{
-      #  name = "a06-dts";
-      #  patch = (pkgs.fetchpatch {
-      #    url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-001-a06-dts.patch";
-      #    sha256 = "10gzx98apb47795w69cpafscp285i203r8b6pzan5pwk324z9b19";
-      #  });
-      #}
       {
         name = "a06-dts";
         patch = (pkgs.fetchpatch {
-          url = "https://raw.githubusercontent.com/css459/arch-linux-arm-clockworkpi-a06/main/linux-clockworkpi-a06/0001-arm64-dts-clockworkpi-a06-dts.patch";
-          sha256 = "0ijl10ha46yv12wfv6frx8svamcdh4pz1dimck3d7rg9jkcagma1";
+          url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-001-a06-dts.patch";
+          sha256 = "10gzx98apb47795w69cpafscp285i203r8b6pzan5pwk324z9b19";
         });
       }
       {
