@@ -37,7 +37,7 @@
         name = "a06-backlight";
         patch = (pkgs.fetchpatch {
           url = "https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-clockworkpi-a06/-/raw/master/0005-video-backlight-add-ocp8178-driver.patch";
-          sha256 = lib.fakeSha256;
+          sha256 = "Fku53Vly8KoXgcEhp/8Norw0sQKT4i4kUeSU2K08bmA=";
         });
         extraStructuredConfig = {
           BACKLIGHT_OCP8178 = lib.kernel.module;
