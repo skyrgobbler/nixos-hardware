@@ -13,7 +13,7 @@
       }
       {
         name = "a06-power";
-        patch = (fetchpatch {
+        patch = (pkgs.fetchpatch {
           url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-002-power.patch";
           sha256 = "1il25l90s0cn7c61rzj2fhs51147vydc8zmiyw4xxc59rfpm96a7";
         });
@@ -25,7 +25,7 @@
       }
       {
         name = "a06-audio";
-        patch = (fetchpatch {
+        patch = (pkgs.fetchpatch {
           url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-003-audio.patch";
           sha256 = "1fbdfmfx5lkh3q4zf8ify6s4ngi6bf0kcjyl9wpvgd63dsyfw6lv";
         });
@@ -35,7 +35,7 @@
       }
       {
         name = "a06-panel";
-        patch = (fetchpatch {
+        patch = (pkgs.fetchpatch {
           url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-004-panel.patch";
           sha256 = "0fdvgr36x68rwqyw1fg60m4rxq5kd1x5slbdrfxpw8s3sdcsr1g6";
         });
@@ -45,7 +45,7 @@
       }
       {
         name = "a06-backlight";
-        patch = (fetchpatch {
+        patch = (pkgs.fetchpatch {
           url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-005-backlight.patch";
           sha256 = "0hb8whf2gmh2vmn5jajqwxd5lybw0sasp106vw2l9y4936bm5w5v";
         });
@@ -55,7 +55,7 @@
       }
       {
         name = "a06-panel_2";
-        patch = (fetchpatch {
+        patch = (pkgs.fetchpatch {
           url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-006-panel.patch";
           sha256 = "0ihiih8j8s55kkn8d4i2f9a295635galr81zgv4zzy6fw520ihcn";
         });
