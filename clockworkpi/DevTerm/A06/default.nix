@@ -6,7 +6,7 @@
     kernelPatches = [ 
       {
         name = "a06-dts";
-        patch = (fetchpatch {
+        patch = (pkgs.fetchpatch {
           url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-001-a06-dts.patch";
           sha256 = "10gzx98apb47795w69cpafscp285i203r8b6pzan5pwk324z9b19";
         });
