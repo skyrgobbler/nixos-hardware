@@ -9,7 +9,7 @@
         patch = (pkgs.fetchpatch {
           url = "https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-clockworkpi-a06/-/raw/master/0001-arm64-dts-clockworkpi-a06-dts.patch";
           sha256 = lib.fakeSha256;
-        })
+        });
       }
       {
         name = "a06-power";
