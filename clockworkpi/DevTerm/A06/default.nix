@@ -57,7 +57,7 @@
         name = "a06-panel_2";
         patch = (pkgs.fetchpatch {
           url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-006-panel.patch";
-          sha256 = lib.fakeSha256;
+          sha256 = "yeIVYuYERygsGUWkK2M2ZGnrJpIB+1gzsdYZS1EIKsc=";
         });
       }
     ];
