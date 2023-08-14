@@ -8,7 +8,7 @@
         name = "a06-dts";
         patch = (pkgs.fetchpatch {
           url = "https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-clockworkpi-a06/-/raw/master/0001-arm64-dts-clockworkpi-a06-dts.patch";
-          sha256 = lib.fakeSha256;
+          sha256 = "rxwHVpHkA3Fl4krAgcO//EQqCaIadcIrbrmbzjjy8AQ=";
         });
       }
       {
