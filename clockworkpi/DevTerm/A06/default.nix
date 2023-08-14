@@ -8,7 +8,7 @@
         name = "a06-dts";
         patch = (pkgs.fetchpatch {
           url = "https://raw.githubusercontent.com/clockworkpi/DevTerm/main/Code/patch/armbian_build_a06/patch/kernel-001-a06-dts.patch";
-          sha256 = "bi7BdrkwacRXauzU3HMdZssj7dBwTzM6s5G9Tq5mkB8";
+          sha256 = "bi7BdrkwacRXauzU3HMdZssj7dBwTzM6s5G9Tq5mkB8=";
           #sha256 = lib.fakeSha256;
         });
       }
