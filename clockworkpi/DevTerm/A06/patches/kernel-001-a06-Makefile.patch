@@ -1,2 +1,10 @@
-31a32
-> dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3399-clockworkpi-a06.dtb
+--- a	2023-08-14 19:36:43.502410530 +0200
++++ b	2023-08-14 19:41:05.475154774 +0200
+@@ -29,6 +29,7 @@
+ dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3368-orion-r68-meta.dtb
+ dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3368-px5-evb.dtb
+ dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3368-r88.dtb
++dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3399-clockworkpi-a06.dtb
+ dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3399-eaidk-610.dtb
+ dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3399-evb.dtb
+ dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3399-ficus.dtb
