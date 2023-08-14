@@ -13,10 +13,11 @@
       }
       {
         name = "a06-power";
-        patch = (pkgs.fetchpatch {
-          url = "https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-clockworkpi-a06/-/raw/master/0002-mfd-axp20x-add-clockworkpi-a06-power-support.patch";
-          sha256 = "OAPUDx7igMEqx6PFy0ptiSCe+LDL1ev/ud40tZPsBP8=";
-        });
+        #patch = (pkgs.fetchpatch {
+        #  url = "https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-clockworkpi-a06/-/raw/master/0002-mfd-axp20x-add-clockworkpi-a06-power-support.patch";
+        #  sha256 = "OAPUDx7igMEqx6PFy0ptiSCe+LDL1ev/ud40tZPsBP8=";
+        #});
+        patch = ./patches/0002-mfd-axp20x-add-clockworkpi-a06-power-support.patch;
         extraStructuredConfig = {
           MFD_AXP20X = lib.kernel.yes;
           MFD_AXP20X_I2C = lib.kernel.yes;
