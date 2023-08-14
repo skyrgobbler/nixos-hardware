@@ -27,7 +27,7 @@
         name = "a06-panel";
         patch = (pkgs.fetchpatch {
           url = "https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-clockworkpi-a06/-/raw/master/0004-gpu-drm-panel-add-cwd686-driver.patch";
-          sha256 = lib.fakeSha256;
+          sha256 = "5m2aoGv53r8ej0a9Ujb7YzT3gF7UhaoPc1uiI+7Zl7s=";
         });
         extraStructuredConfig = {
           DRM_PANEL_CWD686 = lib.kernel.module;
